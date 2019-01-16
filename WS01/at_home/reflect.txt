@@ -1,0 +1,27 @@
+/********************************************************** 
+* Name: Elisa Ng 
+* Student ID: 136265170 
+* Seneca email: eng-li@myseneca.ca 
+* Date of Completion: 5/20/2018
+**********************************************************/ 
+
+1.	What is a namespace? Explain its purpose. 
+A namespace is a declaration that provides a scope that identifies name types, functions or variables inside it. The purpose of a namespace is to organize code and to prevent name collisions that can occur when applications are written simultaneously by several developers.
+
+2.	Why are header files needed? Explain. 
+Header files contain definitions of functions and variables. Using header files it speeds up compile time, as the program grows, so does the code. And having the code organized in a header file can help separate concepts into specific files, also it is easier to find if modification is need it. Finally, it allows to separate interface from implementation. 
+
+3.	In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files. 
+There is no reason to compile header files independently, header files are intended to be included into implementation files. Since a header file usually contains only declarations that can be repeated in each unit, it seem safe to compile a header file without any harmful consequence, but at the same time this will not achieve anything useful. And many compilers will treat files differently depending on the file name extension. 
+
+4.	Explain why you should never include .cpp files in another file. 
+Declarations belongs in header files, this might not cause problems when included in a multiple compilations units because they do not include implementations. Including a definition of a function or class multiple times will cause problems because the linker will get confused and deliver an error. Each .cpp file include definitions for a subset of the program, such as class, functions, global variables, etc. And each compilation unit includes whatever declaration it need to compile the definition it contains. Also, it keep tracks of the functions and classes that need references but does not contain it, so the linker can resolve them. 
+
+5.	Explain in your own words what have you learned on this workshop. 
+With this workshop I learn the importance of header files and the reason why we should never include a .cpp file in another file. Also, doing this workshop make me realize the little differences between coding in C and C++, the different but yet similar rules that both of them have. And while doing the at_home part portion, I realize the importance of the compilation safe-guards to the modules. 
+
+Quiz 1 Reflection:
+I couldn’t answer correctly two question of the quiz. One of them is what a reference in C++ is, I confuse the definition with pointers reason why I got the answer wrong. Now I know that reference is an alias or nickname for a variable or object. A reference needs to be initialize in order to be created and when is created it is usually use to refer to a variable. And they are not the same as pointers because reference don’t have memory and they don’t store address. Also, we cannot have NULL references because reference is connected to a legitimate piece of storage.
+
+The last question that I couldn’t answer is naming the 3 fundamentals types in C++. I couldn’t answer this question because at the moment of the quiz I forgot and I was confusing this with other terms. So I read again and now I know that some of the fundamentals types in C++ are bool, char, int, float and double. Taking into consideration that bool is a new fundamental type for me because is not available in C. 
+
